@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+      
+        <style type='text/css'>
+            body {
+    background-image: url("emp.jpg");
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    background-size: 1300px 800px;
+}
+
+h1 {
+    color:black;
+    font-family: cursive;
+    font-size: 50px;
+        text-align: center;
+background-color: dimgray;    
+
+}
+
+tr {
+    font-family: monospace;
+    font-size: 20px;
+    
+    font-weight: bold;
+}
+         .button {
+    position: fixed;
+    padding: 10px 40px;
+    margin: 220px 30px 50px 80px;
+    float: left;
+    border-radius: 10px;
+    font-family: 'Helvetica', cursive;
+    font-size: 25px;
+    color: #FFF;
+    text-decoration: none;  
+    background-color: slateblue;
+    border-bottom: 10px solid black;
+    border-top-color:  black;
+    text-shadow: 0px -2px #2980B9;
+    /* Animation */
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+
+.button:hover, 
+.button:focus {
+    text-decoration: none;
+    color: chocolate;
+}
+
+.button:active {
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+}    
+            
+    table
+    {
+        tab-size: inherit;
+position: fixed;   
+    background-color: white;}
+
+        .button1 {
+    position: fixed;
+    padding: 10px 40px;
+    margin: 220px 30px 50px 80px;
+    float: left;
+    border-radius: 10px;
+    font-family: 'Helvetica', cursive;
+    font-size: 25px;
+    color: #FFF;
+    text-decoration: none;  
+    background-color: slateblue;
+    border-bottom: 10px solid black;
+    text-shadow: 0px -2px #2980B9;
+    /* Animation */
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+
+.button1:hover, 
+.button1:focus {
+    text-decoration: none;
+    color: violet;
+}
+
+.button1:active {
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+}        
+
+.button2 {
+    position: fixed;
+    padding: 10px 10px;
+    margin: 320px 0px 20px 0px;
+   float: left;
+   
+    border-radius: 10px;
+    font-family: 'Helvetica', cursive;
+    font-size: 25px;
+    color: #FFF;
+    text-decoration: none;  
+    background-color: slateblue;
+    border-bottom: 10px solid black;
+    text-shadow: 0px -2px #2980B9;
+    /* Animation */
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+
+.button2:hover, 
+.button2:focus {
+    text-decoration: none;
+    color: violet;
+}
+
+.button2:active {
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+}       
+        </style> 
+        
+       
+    <h1> EMPLOYER LOG IN </h1>
+     
+              
+        <div align="center">    
+            <form action="IndianOil2" method="post" onclick="return Validate()">
+                  <table border="20" cellpadding="3" cellspacing="0">
+    <tr>
+        <td>
+            Username:
+        </td>
+        <td>
+            <input type="text" name="txt" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Password:
+        </td>
+        <td>
+            <input type="password" name="txtPassword" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Confirm Password:
+        </td>
+        <td>
+            <input type="password" name="txtConfirmPassword" />
+                
+                </td>
+    </tr>
+     <tr>
+        <td>
+            State:
+        </td>
+        <td>
+            <select name="state">
+                <option value="choosestate">CHOOSE STATE</option>
+                     
+                <option value="delhi">DELHI</option>
+               
+    <option value="uttarpradesh">UTTAR PRADESH</option>
+                <option value="gujarat">GUJARAT</option>
+                <option value="andhrapradesh">ANDHRA PRADESH</option>
+                <option value="bihar">BIHAR</option>
+                <option value="karnataka">KARNATAKA</option>
+                <option value="kerala">KERALA</option>
+                <option value="madhyapradesh">MADHYA PRADESH</option>
+                 <option value="maharashtra">MAHARASHTRA</option>
+                <option value="punjab">PUNJAB</option>
+                <option value="rajasthan">RAJASTHAN</option>
+                <option value="tamilnadu">TAMIL NADU</option>
+                <option value="westbengal">WEST BENGAL</option>
+           
+                </select>
+            
+        </td>
+    </tr>
+     <tr>
+        <td>
+            Email-id:
+        </td>
+        <td>
+            <input type="text" name="email" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+        </td>
+        <td>
+            <label class="button">   <input type="submit"/>
+            </label>
+        </td>
+        <td>
+            <label class="button1">
+                <input type="reset" value="Reset" ></button>
+            </label>
+                  </td>   
+    
+        <td>
+            <label class="button2">
+            
+                <input type="submit" value="GO BACK TO MAIN PAGE">
+            
+                </label>
+        </td>
+        
+        
+    
+    
+</table>
+            </form>
+<script type="text/javascript">
+    
+    function Validate() {
+        var password = document.getElementById("txtPassword").value;
+        var confirmPassword = document.getElementById("txtConfirmPassword").value;
+        if (password != confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+        else
+        {alert("redirecting to main page");
+            document.location.href="IndianOil2";
+        
+    }
+    }
+</script>     
+              </body>
+</html>

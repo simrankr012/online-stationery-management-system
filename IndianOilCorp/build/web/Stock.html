@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    
+    
+    <style type="text/css">
+
+        tr{
+            text-align :center;
+        }
+        table {
+    
+    border-style: ridge;
+}
+table, th, td {
+    border: 1px solid black;
+    border-style: groove;
+    background-color: antiquewhite;
+}
+th, td {
+    padding: 15px;
+}
+.button {
+    position: relative;
+    padding: 10px 40px;
+    margin: 50px 50px 50px 500px;
+    float: left;
+    border-radius: 10px;
+    font-family: 'Helvetica', cursive;
+    font-size: 25px;
+    color: #FFF;
+    text-decoration: none;  
+    background-color: #3498DB;
+    border-bottom: 5px solid #2980B9;
+    text-shadow: 0px -2px #2980B9;
+    /* Animation */
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+
+.button:hover, 
+.button:focus {
+    text-decoration: none;
+    color: #fff;
+}
+
+.button:active {
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+}
+
+        
+       body
+       {
+           background: url("IndianOil.jpg");
+           
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 1300px 800px;
+        
+       }
+        
+        
+        h1
+        {
+            caption-side: top;
+            font-family: cursive;
+        background-color: orangered;
+        }
+        th{
+            font-family:serif;
+            font-size: larger;
+        }
+        
+        </style>
+        <body>
+    <form action="UpdateStock" method="post">
+        <div align="center"> 
+            <h1> UPDATE STOCK </h1>
+            </div>
+            
+        <table style="width:100%">
+  <tr>
+    <th>STATIONARY ITEM</th>
+    <th>QUANTITY </th> 
+    
+  </tr>
+  <tr>
+      
+    <td>PEN</td>
+     <td><input type="text" name="pen"</td>
+  </tr>
+  
+  <tr>
+    <td>PENCIL</td> 
+    <td><input type="text" name="pencil"</td>
+  </tr>
+    
+ 
+   <tr>
+      <td>STAPLER PIN BOX</td>
+      <td><input type="text" name="pinbox"</td>
+  </tr>
+ 
+  <tr>
+      <td>STAPLERS </td>
+      <td><input type="text" name="staplers"</td>
+  </tr>
+ 
+   <tr>
+      <td>A4 SIZE SHEET BOX</td>
+      <td><input type="text" name="sheetbox"</td>
+  </tr>
+ 
+   <tr>
+      <td>MARKERS</td>
+      <td><input type="text" name="markers"</td>
+  </tr>
+ 
+   <tr>
+      <td>FEVISTICK</td>
+      <td><input type="text" name="fevistick"</td>
+  </tr>
+  <tr>
+      <td>STICKY NOTES</td>
+      <td><input type="text" name="stickynotes"</td>
+  </tr>
+ 
+  
+  
+  
+  
+  
+  
+  
+</table>
+        
+        
+        
+        <label class="button"> 
+            <input type="submit" name="SUBMIT"/>
+        </label>
+    </body>
+</html>

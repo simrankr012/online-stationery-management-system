@@ -1,0 +1,34 @@
+{
+    "elements": {
+        "button": {
+            "attributes": {
+                "type": {},
+                "value": {}
+            }
+        },
+        "br": {},
+        "input": {
+            "attributes": {
+                "type": {},
+                "value": {}
+            }
+        },
+        "label": {
+            "attributes": {
+                "class": {}
+            }
+        },
+        "span": {}
+    },
+    "attributes": {
+        "charset": {
+            "context": "meta"
+        },
+        "name": {
+            "context": "form"
+        },
+        "align": {
+            "context": "div"
+        }
+    }
+}

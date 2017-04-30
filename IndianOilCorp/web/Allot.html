@@ -1,0 +1,144 @@
+
+
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <style type='text/css'>
+         tr{
+            text-align :center;
+        }   
+        table,  td {
+    border: 1px solid black;
+    border-style: groove;
+    background-color: beige;
+}
+table,  td {
+    border: 1px solid black;
+    border-style: groove;
+}
+ td {
+    padding: 15px;
+
+}
+
+.button {
+    position: relative;
+    padding: 10px 40px;
+    margin: 50px 100px 50px 500px;
+    float: left;
+    border-radius: 10px;
+    font-family: 'Helvetica', cursive;
+    font-size: 25px;
+    color: firebrick;
+    text-decoration: none;  
+    background-color: #3498DB;
+    border-bottom: 5px solid #2980B9;
+    text-shadow: 0px -2px #2980B9;
+    /* Animation */
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+
+.button:hover, 
+.button:focus {
+    text-decoration: none;
+    color:firebrick;
+}
+
+.button:active {
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+}
+h1
+{
+    caption-side: top;
+            font-family: cursive;
+
+background-color: burlywood;
+}
+body{        background-image: url("IndianOil.jpg");
+             -ms-filter: blur(5px);
+ 
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 1300px 800px;
+        
+}
+
+        </style>
+    </head>
+    <body>
+    <div align="center"><h1>
+            STATIONARY REQUEST FORM</h1></div>
+
+          
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+        <form align="center" name="form2" method="post" action="AllotStock">
+            <table style="width:100%">
+                <tr>
+                    <td>EMPLOYEE NAME  :</td>
+                    <td><input type="text" name="empname"  /></td>
+                    
+                <tr>
+                    <td>EMPLOYEE ID    :</td>
+                    <td><input type="number" name="empid" /></td>
+                </tr>
+                
+                <tr>
+                   <td>DEPARTMENT     : </td>
+                    <td><select name="department">    
+                <option value="technical">Technical</option>    
+                <option value="retail">Retail</option> 
+                <option value="materials">Materials</option>
+                <option value="engdepart">Engineering Department</option>
+                <option value="consumer">Consumer</option>
+                <option value="finance">Finance</option>
+                
+                
+                        </select></td>
+                <tr>
+                    <td>STATIONARY ITEM :</td>
+                    <td><select name="item" >
+                <option value="pen">PEN</option>
+                <option value="pencil">PENCIL</option>
+                <option value="stapler">STAPLER</option>
+                <option value="staplerbox">STAPLER PIN BOX</option>
+                <option value="markers">MARKERS</option>
+                <option value="a4sheet">A4 SIZE SHEET BUNDLE</option>
+                <option value="fevistick">FEVISTICK</option>
+                <option value="stickynotes">STICKY NOTES</option>
+            </select>
+                    </td>
+                <tr>
+                    <td>QUANTITY       :</td>
+                    <td><input type="number" name="quant"/></td>            
+            </table>
+            <br>
+            <br>
+            
+            <div><label class="button">
+      <input name="submit" type="submit" />
+  
+</form> 
+            <br>
+            <br>
+          <form  method="post" action="index.html">
+  
+                    <input name="logout" type="submit" value="LogOut"/>
+    
+            </div>
+          
+</form> 
+</label>      
+        
+            </body>
+</html>
